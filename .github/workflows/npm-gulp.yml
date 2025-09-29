@@ -36,4 +36,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
         force: true
-        directory: ./dest    
+        directory: ./dest
+
+    - name: Deploy
+      uses: actions/deploy-pages@v4
