@@ -19,7 +19,7 @@ function includeHtml() {
       basepath: '@file' // Базовый путь для включений
     }))
 	.pipe(rename('index.html'))
-    .pipe(dest('.'));
+    .pipe(dest('./dest'));
 }
 
 // Экспорт задачи
