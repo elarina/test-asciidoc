@@ -28,7 +28,7 @@ jobs:
         author_name: GitHub Actions
         author_email: actions@github.com
         message: 'Build: auto-generated files'
-        add: 'dest/index.html'
+        add: 'index.html'
     
     - name: Push back
       uses: ad-m/github-push-action@master
