@@ -8,7 +8,7 @@ function build() {
 }
 
 // Экспорт задачи
-exports.build = build;
+exports.default = build;
 
 // Задача для вставки содержимого одного HTML-файла в другой
 function includeHtml() {
