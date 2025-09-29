@@ -1,6 +1,7 @@
 const { src, dest } = require('gulp');
 const fileinclude = require('gulp-file-include');
 const asciidoctor = require('@asciidoctor/core')();
+const rename = require('gulp-rename');
 
 function build() {
 	convertAdoc();
