@@ -27,5 +27,10 @@ jobs:
         npm install
         gulp
         
-    - name: push back
-      uses: actions/push@v4
+    - name: Push back
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
+        force: true
+        directory: ./dest
