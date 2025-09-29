@@ -12,7 +12,7 @@ exports.build = build;
 
 // Задача для вставки содержимого одного HTML-файла в другой
 function includeHtml() {
-  return src('content1.html')
+  return src('index.html')
     .pipe(fileinclude({
       prefix: '@@', // Префикс для включения
       basepath: '@file' // Базовый путь для включений
