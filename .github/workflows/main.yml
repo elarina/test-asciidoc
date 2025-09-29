@@ -45,5 +45,5 @@ jobs:
         with:
           node-version: 18
                    
-    - name: Install gulp
-      uses: actions/setup-gulp@v4
+    
+        - run: npx gulp build   
