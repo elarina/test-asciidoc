@@ -33,4 +33,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
         force: true
-        directory: ./dest 
+        directory: ./dest   
