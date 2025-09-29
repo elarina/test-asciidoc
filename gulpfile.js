@@ -12,12 +12,13 @@ exports.default = build;
 
 // Задача для вставки содержимого одного HTML-файла в другой
 function includeHtml() {
-  return src('index.html')
+  return src('template.html')
     .pipe(fileinclude({
       prefix: '@@', // Префикс для включения
       basepath: '@file' // Базовый путь для включений
     }))
-    .pipe(dest('./dest'));
+	.pipe(rename('index.html'))
+    .pipe(dest('.'));
 }
 
 // Экспорт задачи
